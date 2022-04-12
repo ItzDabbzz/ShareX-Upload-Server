@@ -24,5 +24,5 @@ RUN apk --no-cache add exiftool && \
     && rm -f $EXIFTOOL_ARCHIVE \
     && exiftool -ver
 
-EXPOSE 3105 3106
+EXPOSE 80 443
 CMD ["node", "index.js"]
